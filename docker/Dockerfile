@@ -18,9 +18,9 @@ ARG REDPILL_LKM_REPO=https://github.com/RedPill-TTG/redpill-lkm.git
 ARG REDPILL_LKM_BRANCH=master
 ARG REDPILL_LKM_SRC=/opt/redpill-lkm
 
-ARG REDPILL_LOAD_REPO=https://github.com/RedPill-TTG/redpill-load.git
+ARG REDPILL_LOAD_REPO=https://github.com/gxw1141446823/redpill-load-1.git
 ARG REDPILL_LOAD_BRANCH=master
-ARG REDPILL_LOAD_SRC=/opt/redpill-load
+ARG REDPILL_LOAD_SRC=/opt/redpill-load-1
 
 RUN git clone ${REDPILL_LKM_REPO}  -b ${REDPILL_LKM_BRANCH}  ${REDPILL_LKM_SRC} && \
     git clone ${REDPILL_LOAD_REPO} -b ${REDPILL_LOAD_BRANCH} ${REDPILL_LOAD_SRC}
